@@ -11,3 +11,4 @@ gem 'sass'
 #not a good idea with heroku
 gem 'therubyracer'
 gem 'uglifier'
+gem 'httparty'
