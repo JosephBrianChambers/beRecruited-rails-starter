@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.4)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.0.2)
     hike (1.2.3)
@@ -102,6 +103,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ejs
   httparty
   jquery-rails
   json

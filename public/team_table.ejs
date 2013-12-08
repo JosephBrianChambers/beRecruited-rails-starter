@@ -1,0 +1,21 @@
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>This Week's Points</th>
+    <th>Last Week's Points</th>
+  </tr>
+  <% data.leaders.forEach(function (leader) { %>
+    <tr>
+      <td>
+        <%= leader.first_name +" "+leader.last_name%>
+      </td>
+      <td>
+        <%= leader.current_amount %>
+      </td>
+      <td>
+        <%= leader.last_week_amount %>
+      </td>
+    </tr>
+  <% }) %>
+</table>

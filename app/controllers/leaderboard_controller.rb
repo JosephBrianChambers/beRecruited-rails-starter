@@ -15,7 +15,7 @@ class LeaderboardController < ApplicationController
     
     respond_to do |format|
       format.html  { render :index }
-      format.json  { render :json => {"team" => @team, "leaders" =>  @leaders} }
+      format.json  { render :json => {"team" => @team, "leaders" => @leaders}}
     end
   end
 end

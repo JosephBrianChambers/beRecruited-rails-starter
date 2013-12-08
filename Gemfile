@@ -7,6 +7,7 @@ gem 'json'
 gem 'rest-client'
 gem 'httparty'
 gem 'jquery-rails'
+gem 'ejs'
 
 #asset requirements
 gem 'sass'
