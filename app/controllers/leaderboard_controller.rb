@@ -4,12 +4,10 @@ class LeaderboardController < ApplicationController
     @teams = Team.all
 
     if selected_nick
-      # TODO: Fetch team based on dropdown selection 
-      # @team = ?
-      @team = Team.where(:nickname => selected_nick).includes(:favoritings).first
+      #Fetch team based on dropdown selection 
+      @team = Team.where(:nickname => selected_nick).first 
  
-      # TODO: Fetch top 5 leaders for this team
-      # @leaders = ?
+      #Fetch top 5 leaders for this team
       @leaders = Favorite.top(@team.team_api_id)
     end
     

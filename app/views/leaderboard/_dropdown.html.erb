@@ -1,0 +1,9 @@
+<div class="team-selector">
+  <form class="drop-down" action="">
+  <select class="team" data-api="<%= "#{leaderboard_index_url}.json" %>" name="team">
+    <% @teams.each do |team| %>
+      <option value="<%= team.nickname%>"><%= team.nickname %></option>
+    <% end %>
+  </select>
+  </form>
+</div>

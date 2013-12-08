@@ -1,21 +1,6 @@
 <div id="main">
-  <div class="team-selector">
-    <form class="drop-down" action="">
-    <select class="team" data-api="<%= "#{leaderboard_index_url}.json" %>" name="team">
-      <% @teams.each do |team| %>
-        <option value="<%= team.nickname%>"><%= team.nickname %></option>
-      <% end %>
-    </select>
-    </form>
-  </div>
-  <h1 class="team-title">&lt; Insert Team Here &gt; Leaderboard</h1>
-
-  <%# TODO: Remove this placeholder text! %>
-  <p>Welcome to the beRecruited challenge!</p>
-  <p>Populate this leaderboard from the <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> API here: <a href="http://br-interview-api.heroku.com">http://br-interview-api.heroku.com</a></p>
-    
-  <%# TODO: Populate the rows in this table with data from http://br-interview-api.heroku.com %>
-
+  <%= render partial: "dropdown" %>
+  <h1 class="team-title">Leaderboard</h1>
   <div class="table"></div>
 </div>
 
