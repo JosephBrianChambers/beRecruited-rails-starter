@@ -1,5 +1,14 @@
 <div id="main">
-  <h1>&lt; Insert Team Here &gt; Leaderboard</h1>
+  <div class="team-selector">
+    <form class="drop-down" action="">
+    <select class="team" data-api="<%= "#{leaderboard_index_url}.json" %>" name="team">
+      <% @teams.each do |team| %>
+        <option value="<%= team.nickname%>"><%= team.nickname %></option>
+      <% end %>
+    </select>
+    </form>
+  </div>
+  <h1 class="team-title">&lt; Insert Team Here &gt; Leaderboard</h1>
 
   <%# TODO: Remove this placeholder text! %>
   <p>Welcome to the beRecruited challenge!</p>
@@ -14,4 +23,7 @@
     </tr>
   </table>
 </div>
+
+<div class="test-div"></div>
+
 
