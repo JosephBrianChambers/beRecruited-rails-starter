@@ -41,5 +41,8 @@ module BeRecruitedInterview
 
     #enable asset pipeline
     config.assets.enabled = true
+    
+    #add if app is initializing before it can precompile the assets. make app precompile first
+    config.assets.initialize_on_precompile = false
   end
 end
