@@ -6,9 +6,12 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div class="container">
+    <div class="row-ls-12">
+      <%= yield %>
 
-  <%= yield %>
-
-  <%= javascript_include_tag 'application' %>
+      <%= javascript_include_tag 'application' %>
+    </div>
+  </div>
 </body>
 </html>

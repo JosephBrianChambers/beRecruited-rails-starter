@@ -11,7 +11,7 @@ $(document).ready(function () {
         //update table in dom
         var tableHtml = new EJS({url: '/team_table.ejs'}).render(data);
         var fullTeamName = data.team.team.location+" "+data.team.team.nickname;
-        $('.team-title').html(fullTeamName);
+        $('.team-title').html(fullTeamName + " Leaderboard");
         $('.table').html(tableHtml);
       }
     });
